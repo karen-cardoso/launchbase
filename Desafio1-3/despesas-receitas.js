@@ -1,5 +1,4 @@
 // Crie um programa que calcula a soma de receitas e despesas de usuários e no fim retorna o saldo (receitas - despesas).
-
 // Utilize o array de usuários abaixo:
 
 const usuarios = [
@@ -22,23 +21,8 @@ const usuarios = [
 
 // Percorra o array de usuários e para cada usuário chame uma função chamada calculaSaldo que recebe como parâmetro as receitas e despesas do usuário:
 
-for (let i = 0; i < usuarios.length; i++) {
-
-  const usuario = usuarios[i]
-
-  let saldo = calculaSaldo(usuario.receitas, usuario.despesas)
-
-  if (saldo > 0) {
-    console.log(`${usuario.nome} possui saldo POSITIVO DE ${saldo}`)
-  } else {
-    console.log(`${usuario.nome} possui saldo NEGATIVO DE ${saldo}`)
-  }
-}
-
-// A função calculaSaldo deve utilizar a função somaNumeros para calcular a soma de receitas e despesas 
-// e no fim retornar o saldo do usuário, ou seja receitas - despesas.
-
 function calculaSaldo(receitas, despesas) {
+
   let somaReceitas = somaNumeros(receitas)
   let somaDespesas = somaNumeros(despesas)
 
@@ -46,8 +30,9 @@ function calculaSaldo(receitas, despesas) {
   return saldo
 }
 
-// Crie uma segunda função que recebe como parâmetro um array de números e retorna a soma deles 
-// e use-a para calcular a soma de receitas e despesas dentro da função calculaSaldo:
+
+// A função calculaSaldo deve utilizar a função somaNumeros para calcular a soma de receitas e despesas 
+// e no fim retornar o saldo do usuário, ou seja receitas - despesas.
 
 function somaNumeros(numeros) {
 
@@ -59,9 +44,26 @@ function somaNumeros(numeros) {
   return soma
 }
 
+
+// Crie uma segunda função que recebe como parâmetro um array de números e retorna a soma deles 
+// e use-a para calcular a soma de receitas e despesas dentro da função calculaSaldo:
 // No fim exiba todos usuários em telas, seu respectivo saldo e SE o saldo é POSITIVO ou NEGATIVO:
 // Fulano possui saldo POSITIVO de 43.3
 // Sicrano possui saldo NEGATIVO de -90.3
+
+for (let i = 0; i < usuarios.length; i++) {
+
+  const usuario = usuarios[i]
+
+  let saldo = calculaSaldo(usuario.receitas, usuario.despesas)
+
+  if (saldo > 0) {
+    console.log(`${usuario.nome} possui saldo POSITIVO DE ${saldo.toFixed(2)}`)
+  } else {
+    console.log(`${usuario.nome} possui saldo NEGATIVO DE ${saldo.toFixed(2)}`)
+  }
+}
+
 
 
 
