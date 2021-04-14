@@ -12,7 +12,7 @@ Email: Link que deve chamar o comando de enviar email para o destinatário oi@ro
 
 Telefone: Link que deve chamar o comando de realizar uma ligação para o número +5547992078767. Dica: utilize o comando tel dentro do href;
 
-####Estilização
+#### Estilização
 Você tem liberdade para escolher a estilização que preferir para esse desafio, mas alguns pontos são obrigatórios:
 
 Deve ser aplicado um background
