@@ -6,7 +6,7 @@ body{
 }
 
 header{
-    background: #7F50AD;
+    background: white;
     margin: 0;
     padding: 30px;
 }
@@ -15,11 +15,11 @@ header div{
 }
 header div a{
     text-decoration: initial;
-    margin: 30px;
-    color: white;
+    margin-right: 30px;
+    color: #7F50AD;
 }
 
 header div a:hover{
-    color: #D4A8FF;
+    color: #32CD32;
     transition: 300ms; 
 }
