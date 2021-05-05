@@ -1,12 +1,20 @@
+:root{
+ --color-green:#32CD32;
+ --color-gray-200: #4F4F4F;
+ --color-gray-300: #363636;
+ --color-purple-300: #C38CFA;
+ --color-purple-700: #7F50AD;
+}
+
 body{
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
-    background: #C38CFA;
+    background: var(--color-gray-200);
 }
 
 header{
-    background: white;
+    background:var(--color-gray-300);
     margin: 0;
     padding: 30px;
 }
@@ -16,10 +24,10 @@ header div{
 header div a{
     text-decoration: initial;
     margin-right: 30px;
-    color: #7F50AD;
+    color: white;
 }
 
 header div a:hover{
-    color: #32CD32;
+    color: var(--color-purple-300);
     transition: 300ms; 
 }
