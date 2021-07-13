@@ -40,6 +40,19 @@ header div a:hover{
     transition: 300ms; 
 }
 
+#wrapper{
+    text-align: center;
+    padding: 2rem;
+}
+
+#wrapper h1{
+    font-size: 2.625rem;
+    line-height:3.25rem;
+    font-weight: 700;
+}
+
+/* ---- SOBRE ---- */
+
 #data{
     margin: 0 auto;
     width: 1080px;
@@ -89,4 +102,62 @@ a:visited{
     color: var(--color-green);
     border-bottom: 2px solid var(--color-green);
     padding: 0.2rem;
+}
+
+/* ---- CONTEÚDO ---- */
+
+.posts{
+    max-width: 56.25rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding-bottom: 2rem;
+}
+
+.post{
+    background-color: var(--color-gray-300);
+}
+
+.post_img_container img{
+    width: 100%;
+}
+.post_content p{
+    align-items: justify;
+}
+
+.post_content,
+.post_info{
+    padding: 1.5rem;
+}
+
+.post_info{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/* ---- MODAL ---- */
+
+.modal-overlay{
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position:fixed;
+    top: 0;
+}
+
+.modal{
+    background-color: var(--color-white);
+    width: 90%;
+    height: 90%;
+    margin: 5vh auto;
+    position: relative;
+}
+
+.modal .close-modal{
+    color: black;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    cursor: pointer;
 }
